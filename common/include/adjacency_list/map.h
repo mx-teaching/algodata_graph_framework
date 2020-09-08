@@ -19,20 +19,21 @@ class Map
 {
 public:
     Map();
-    Map(int rows, int columns, bool color = false);
+    bool init(const std::string &file_name);
+    bool init(int columns, int rows);
     void create_graph(GraphPtr vertices);
     void create_map_from_vertices(const GraphPtr vertices);
     void draw_path(const GraphPtr vertices, cv::Vec3b color, int thickness = 1);
-    
-    cv::Mat &getMat() {
-        return data;        
-    }
-    const cv::Mat &getMat() const {
-        return data;        
-    }
+    void drawData(const std::string &titel = "Map data");
+    void drawPic(const std::string &titel = "Map picture");
+    void writePic(const std::string &file_name);
+    void show();
+    int rows() const;
+    int cols() const;
 private:
     size_t index(int row, int col);
     cv::Mat data;
+    cv::Mat pic;
 };
 
 };
