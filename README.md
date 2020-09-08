@@ -1,4 +1,12 @@
-# lineare_listen
+# algodata graph framework
+This framework is used to represent graphs as adjacency lists with two files, one for vertices and one for edges.
+Vertices and edges are designed to host attributes for visualization. 
+
+## Features
+* compute graphs based on gray scaled images (maps)
+* cvs format to represent graphs
+* tool to visualize graphs on or as images (maps) including paths
+
 ## Download and Run Programm 
 ### Windows
 Install and setup mingw64 or Codeblocks 20*.
