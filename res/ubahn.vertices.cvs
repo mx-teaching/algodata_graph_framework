@@ -1,0 +1,13 @@
+ vertex.id;             label;      value;       column;        row
+         0;     Schottenring ;          1;          996;       372
+         1;    Schwedenplatz ;          1;         1080;       453
+         2;       Wien Mitte ;          1;         1080;       620
+         3;         Stadtark ;          1;          986;       700
+         4;       Karlsplatz ;          1;          837;       700
+         5;  Muesumsquartier ;          1;          765;       620
+         6;     Volkstheater ;          1;          756;       536
+         7;         Rathhaus ;          1;          767;       447
+         8;      Schottentor ;          1;          858;       372
+         9;      Herrengasse ;          1;          840;       537
+        10;     Stefansplatz ;          1;          920;       537
+        11;        Stubentor ;          1;         1017;       551
