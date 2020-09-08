@@ -10,6 +10,58 @@ Vertices and edges are designed to host attributes for visualization.
 * features c++ 2014 and soon 2017
 * for windows and linux
 
+## Graph example
+ubahn.vertices.cvs
+```
+ vertex.id;             label;      value;       column;        row
+         0;     Schottenring ;          1;          996;       372
+         1;    Schwedenplatz ;          1;         1080;       453
+         2;       Wien Mitte ;          1;         1080;       620
+         3;         Stadtark ;          1;          986;       700
+         4;       Karlsplatz ;          1;          837;       700
+         5;  Muesumsquartier ;          1;          765;       620
+         6;     Volkstheater ;          1;          756;       536
+         7;         Rathhaus ;          1;          767;       447
+         8;      Schottentor ;          1;          858;       372
+         9;      Herrengasse ;          1;          840;       537
+        10;     Stefansplatz ;          1;          920;       537
+        11;        Stubentor ;          1;         1017;       551
+```       
+ubahn.edges.cvs
+```
+   edge.id;     weight;     src.id;     des.id
+         0;          1;          0;          1
+         1;          1;          1;          0
+         2;          1;          1;          2
+         3;          1;          2;          1
+         4;          1;          2;          3
+         5;          1;          3;          2
+         6;          1;          3;          4
+         7;          1;          4;          5
+         8;          1;          1;         10
+         9;          1;         10;          1
+        10;          1;         10;          4
+        11;          1;          4;         10
+        12;          1;          4;          5
+        13;          1;          5;          4
+        14;          1;          5;          6
+        15;          1;          6;          7
+        16;          1;          7;          8
+        17;          1;          8;          7
+        18;          1;          8;          0
+        19;          1;          0;          8
+        20;          1;          6;          9
+        21;          1;          9;          6
+        22;          1;          9;         10
+        23;          1;         10;          9
+        24;          1;         10;         11
+        25;          1;         11;         10
+        26;          1;         11;          2
+        27;          1;          2;         11
+```    
+![Imgur Image](https://github.com/mx-teaching/algodata_graph_framework/blob/master/res/ubahn.png  width=100)
+
+
 ## Download and Run Programm 
 ### Windows
 Install and setup mingw64 or Codeblocks 20*.
