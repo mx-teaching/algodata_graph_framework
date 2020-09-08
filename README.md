@@ -13,7 +13,10 @@ Vertices and edges are designed to host attributes for visualization.
 ## Graph example
 ### Inner city of Viennas subway net
 
+#### Graph
 <img src="https://github.com/mx-teaching/algodata_graph_framework/blob/master/res/ubahn.png" width="400">
+
+Two files are used to reprecent the vertices and and the edges.
 
 ubahn.vertices.cvs
 ```
@@ -63,6 +66,19 @@ ubahn.edges.cvs
         26;          1;         11;          2
         27;          1;          2;         11
 ```    
+#### Path
+A file in the same format as edges us used to reprecent a path.
+In this case the shortest path between Schwedenplatz to Museumsquartier. Which can also be visualized
+
+ubahn.path.cvs  
+```   
+   edge.id;     weight;     src.id;     des.id
+         8;          1;          1;         10
+        10;          1;         10;          4
+        12;          1;          4;          5
+```    
+<img src="https://github.com/mx-teaching/algodata_graph_framework/blob/master/res/ubahn.path.png" width="400">
+
 
 ## Download and Run Programm 
 ### Windows
