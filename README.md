@@ -59,7 +59,7 @@ ubahn.edges.cvs
         26;          1;         11;          2
         27;          1;          2;         11
 ```    
-![Imgur Image](https://github.com/mx-teaching/algodata_graph_framework/blob/master/res/ubahn.png  width=100)
+![](https://github.com/mx-teaching/algodata_graph_framework/blob/master/res/ubahn.png  |  width=100)
 
 
 ## Download and Run Programm 
