@@ -11,6 +11,7 @@ Vertices and edges are designed to host attributes for visualization.
 * for windows and linux
 
 ## Graph example
+<img src="https://github.com/mx-teaching/algodata_graph_framework/blob/master/res/ubahn.png" width="400">
 ubahn.vertices.cvs
 ```
  vertex.id;             label;      value;       column;        row
@@ -59,7 +60,6 @@ ubahn.edges.cvs
         26;          1;         11;          2
         27;          1;          2;         11
 ```    
-<img src="https://github.com/mx-teaching/algodata_graph_framework/blob/master/res/ubahn.png" width="100">
 
 ## Download and Run Programm 
 ### Windows
