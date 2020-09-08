@@ -1,11 +1,14 @@
 # lineare_listen
-## Download and Run Programm
+## Download and Run Programm 
+### Windows
+Install and setup mingw64 or Codeblocks 20*.
+
 Assuming you project should be located in ```$HOME\projects```.
 ```
 mkdir -p "$HOME\projects"
 cd "$HOME\projects"
-git clone https://github.com/mx-teaching/algodata_graphs.git
-cd algodata_graphs
+git clone https://github.com/mx-teaching/algodata_graph_framework.git
+cd algodata_graph_framework
 mkdir 3rdParty
 cd 3rdParty
 git clone -b OpenCV-4.1.1-x64 https://github.com/huihut/OpenCV-MinGW-Build.git OpenCV
@@ -19,12 +22,30 @@ There you have two options:
 
 Now you can combile the projects
 
-
 ```
 $env:Path += ";$HOME\projects\algodata_graphs\3rdParty\OpenCV\x64\mingw\bin"
-cd $HOME\projects\algodata_graphs"
+cd $HOME\projects\algodata_graph_framework"
 mkdir build
 cd build
 cmake -G "CodeBlocks - MinGW Makefiles" -DCMAKE_BUILD_TYPE=Debug ..
 mingw32-make
+```
+
+### Linux
+Install ```libopencv-dev``` 
+Assuming you project should be located in ```$HOME/projects```.
+```
+mkdir -p $HOME/projects
+cd $HOME/projects
+git clone https://github.com/mx-teaching/algodata_graph_framework.git
+cd algodata_graph_framework
+```
+
+Now you can combile the projects
+
+```
+mkdir $HOME/projects/algodata_graph_framework/build
+cd $HOME/projects/algodata_graph_framework/build
+cmake -DCMAKE_BUILD_TYPE=Debug ..
+make
 ```
