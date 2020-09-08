@@ -7,6 +7,8 @@ Vertices and edges are designed to host attributes for visualization.
 * cvs format to represent graphs
 * tool to visualize graphs on or as images (maps) including paths
 * designed for teaching
+* features c++ 2014 and soon 2017
+* for windows and linux
 
 ## Download and Run Programm 
 ### Windows
