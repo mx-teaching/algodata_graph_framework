@@ -1,4 +1,4 @@
-# algodata graph framework
+# Graph Framework
 This framework is used to represent graphs as adjacency lists with two files, one for vertices and one for edges.
 Vertices and edges are designed to host attributes for visualization. 
 
@@ -6,6 +6,7 @@ Vertices and edges are designed to host attributes for visualization.
 * compute graphs based on gray scaled images (maps)
 * cvs format to represent graphs
 * tool to visualize graphs on or as images (maps) including paths
+* designed for teaching
 
 ## Download and Run Programm 
 ### Windows
