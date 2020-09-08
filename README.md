@@ -97,26 +97,32 @@ git clone https://github.com/mx-teaching/algodata_graph_framework.git
 cd algodata_graph_framework
 mkdir 3rdParty
 cd 3rdParty
-git clone -b OpenCV-4.1.1-x64 https://github.com/huihut/OpenCV-MinGW-Build.git OpenCV
+# unzip the OpenCV.zip or compile opencv as described later
 ```
-
-First extend the search path on your system with the directory ```$HOME\projects\algodata_graphs\3rdParty\OpenCV\x64\mingw\lib```. This is necessary to find the opencv dll need by the program
-
-There you have two options:
-* You can use the dialog System ```Properties -> Advanced -> Enviroment Variables``` or by using
-* the terminal and the command ```$env:Path += ";$HOME\projects\algodata_graphs\3rdParty\OpenCV\x64\mingw\bin"```. Using the terminal exdends the serach path only for the current session!
 
 Now you can combile the projects
 
 ```
-$env:Path += ";$HOME\projects\algodata_graphs\3rdParty\OpenCV\x64\mingw\bin"
 cd $HOME\projects\algodata_graph_framework"
 mkdir build
 cd build
-cmake -G "CodeBlocks - MinGW Makefiles" -DCMAKE_BUILD_TYPE=Debug ..
+cmake -G "CodeBlocks - MinGW Makefiles" -DCMAKE_BUILD_TYPE=Debug  -DBUILD_SHARED_LIBS=OFF ..
 mingw32-make
 ```
-
+#### OpenCV on Windows
+If you like to compile your own opencv you can use the following cmake command
+```
+cmake.exe -G "MinGW Makefiles" -DCMAKE_INSTALL_PREFIX="$HOME\projects\algodata_graph_framework\3rdParty\OpenCV" `
+  -DBUILD_SHARED_LIBS=OFF  `
+  -DBUILD_opencv_calib3d=OFF `
+  -DBUILD_opencv_dnn=OFF -DBUILD_opencv_features2d=OFF `
+  -DBUILD_opencv_flann=OFF -DBUILD_opencv_gapi=OFF `
+  -DBUILD_opencv_objdetect=OFF -DBUILD_opencv_photo=OFF `
+  -DBUILD_opencv_stitching=OFF -DBUILD_opencv_ts=OFF `
+  -DBUILD_opencv_video=OFF -DBUILD_opencv_videoio=OFF `
+  -DBUILD_opencv_imgcodecs=ON ..
+make install
+``` 
 ### Linux
 Install ```libopencv-dev``` 
 Assuming you project should be located in ```$HOME/projects```.
