@@ -79,6 +79,10 @@ ubahn.path.cvs
 ```    
 <img src="https://github.com/mx-teaching/algodata_graph_framework/blob/master/res/ubahn.path.png" width="400">
 
+### Cave enviroment
+The framework is able to generate a vertices file and edge file based on a gray scaled image and visualize paths.
+
+<img src="https://github.com/mx-teaching/algodata_graph_framework/blob/master/res/cave.path.example.png" width="400">
 
 ## Download and Run Programm 
 ### Windows
