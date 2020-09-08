@@ -32,6 +32,7 @@ int main( int argc, char** argv )
 
     cv::namedWindow( "Map with path", cv::WINDOW_AUTOSIZE );         
     cv::imshow( "Map with path", maze_source.getMat() );
+    cv::imwrite(adjacency_list::getPathMapFilename(map_name), maze_source.getMat());
 
     cv::waitKey(0); 
     return 0;

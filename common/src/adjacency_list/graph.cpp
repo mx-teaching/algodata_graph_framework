@@ -148,6 +148,11 @@ std::string adjacency_list::getPathFilename(const std::string file_name) {
     std::string final_name = file_name.substr(0, lastindex) + ".path.cvs";
     return final_name;
 }
+std::string adjacency_list::getPathMapFilename(const std::string file_name) {
+    size_t lastindex = file_name.find_last_of(".");
+    std::string final_name = file_name.substr(0, lastindex) + ".path.png";
+    return final_name;
+}
 
 std::ostream& operator<<(std::ostream& os, const Vertex& vertex)
 {

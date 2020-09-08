@@ -113,6 +113,11 @@ std::string getEdgesFilename(const std::string file_name);
  * @param file_name
  **/ 
 std::string getPathFilename(const std::string file_name); 
+/**
+ * generates a new file ending
+ * @param file_name
+ **/ 
+std::string getPathMapFilename(const std::string file_name); 
 
 
 };
