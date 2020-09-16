@@ -86,7 +86,10 @@ In this case (500x500pix) the graph as 250000 vertices and 1952916 edges.
 <img src="https://github.com/mx-teaching/algodata_graph_framework/blob/master/res/cave.path.example.png" width="400" border="1">
 
 ## Download and Run Programm 
-### Windows
+### Windows precompiled
+The [folder binaries](./binaries/) holds zip files with the latest precompiled version of the framework. Download and extract the agf-*.zip file into your folder holding the pixel images and cvs files.
+
+### Windows from Source
 Install and setup mingw64 or Codeblocks 20*.
 
 Assuming you project should be located in ```$HOME\projects```.
