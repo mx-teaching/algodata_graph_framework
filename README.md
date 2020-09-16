@@ -2,6 +2,11 @@
 This framework is used to represent graphs as adjacency lists with two files, one for vertices and one for edges.
 Vertices and edges are designed to host attributes for visualization. 
 
+# Table of Contents
+1. [Features](#features)
+2. [Graph example](#graph-example)
+3. [Installation](#installation)
+
 ## Features
 * compute graphs based on gray scaled images (maps)
 * cvs format to represent graphs
@@ -85,7 +90,7 @@ In this case (500x500pix) the graph as 250000 vertices and 1952916 edges.
 
 <img src="https://github.com/mx-teaching/algodata_graph_framework/blob/master/res/cave.path.example.png" width="400" border="1">
 
-## Download and Run Programm 
+## Installation 
 ### Windows precompiled
 The [folder binaries](./binaries/) holds zip files with the latest precompiled version of the framework. Download and extract the agf-*.zip file into your folder holding the pixel images and cvs files.
 
