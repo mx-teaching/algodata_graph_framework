@@ -87,8 +87,9 @@ ubahn.path.cvs
 ### Cave enviroment
 The framework is able to generate a vertices file and edge file based on a gray scaled image and visualize paths.
 In this case (500x500pix) the graph as 250000 vertices and 1952916 edges. 
+(The coordinate system is drawn manually for calcification)
 
-<img src="https://github.com/mx-teaching/algodata_graph_framework/blob/master/res/cave.path.example.png" width="400" border="1">
+<img src="https://github.com/mx-teaching/algodata_graph_framework/blob/master/res/cave.path.example.with.axis.png" width="400" border="1">
 
 ## Installation 
 ### Windows precompiled
